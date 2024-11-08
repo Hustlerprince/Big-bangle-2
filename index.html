@@ -6,12 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     
-
-
     
     <!-- Swiper CSS-->
     <link rel="stylesheet" href="css/swiper.css">
@@ -21,16 +17,10 @@
     <link href="css/index.css"  rel="stylesheet"/>
     
     <title>Home Page</title>
-    <!-- JS database-->
-    <script src="js/database.js"></script>
 
-    <link rel="icon" href="image/amaasicon.png" sizes="32x32">
-    <script>
-
-        window.addEventListener('load',function(e){
-            getAllProjects(6,"all",e);
-        });
-    </script>
+    
+      
+   
   
 </head>
 <body>
@@ -527,35 +517,15 @@
        courtesy uptopia.com
     </div>
 
-    <!--Bootstrap JS-->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Swiper JS-->
-    <script src="js/swiper.js"></script>
-    <!-- Pages JS Common-->
-    <script src="js/common.js"></script>
 
-        <script>
 
-            let tabsArray = document.querySelectorAll(".tabs li");
-            let divs = document.querySelector(".one");
-            tabsArray.forEach((ele) => {
-                ele.addEventListener("click", function (e) {
-                    tabsArray.forEach((ele) => {
-                        if(ele.classList.contains("project-active"))
-                         ele.classList.remove("project-active");
-                    });
-                     e.currentTarget.classList.add("project-active");
-                    var type=ele.getAttribute('data-type');
-                    var project=[];
-                    if(type=="all"){getAllProjects(6,"all",e)}
-                    else if(type=="apartment")
-                        getAllProjects(6,"apartment",e);
-                    else if(type=="villa")
-                        getAllProjects(6,"villa",e)
-                    else if(type=="sold")
-                        getAllProjects(6,"sold",e)
-                    else if(type=="forsale")
-                        getAllProjects(6,"forsale",e);
+
+
+
+
+
+    
+    
                     
                 });
             });
@@ -610,5 +580,10 @@
                 },
             });
         </script>
+
+
+
+
+    
 </body>
 </html>
